@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCam Systems | Seguridad Inteligente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary: #00aaff; --secondary: #0055cc; --dark: #0f172a; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f8fafc; }
+        
+        nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: var(--dark); }
+        .nav-links a { margin-left: 1.8rem; text-decoration: none; color: #334155; font-weight: 500; }
+        .nav-links a:hover { color: var(--primary); }
+
+        .hero { background: linear-gradient(135deg, #00aaff, #0055cc); color: white; text-align: center; padding: 7rem 2rem; }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+
+        section { max-width: 1200px; margin: 5rem auto; padding: 0 2rem; }
+        h2 { font-size: 2.3rem; text-align: center; margin-bottom: 3rem; color: var(--dark); }
+
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 3rem 2rem; }
+
+        .whatsapp-float {
+            position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+    <div class="nav-container">
+        <a href="index.html" style="text-decoration: none;">
+            <img src="images/logo.jpg" alt="SmartCam Systems" style="height: 55px; width: auto;">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+</nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCam Systems | Soporte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary: #00aaff; --secondary: #0055cc; --dark: #0f172a; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f8fafc; }
+        
+        nav, .nav-container, .logo, .nav-links, .hero, footer, .whatsapp-float { /* mismo estilo */ }
+        
+        section { max-width: 1200px; margin: 4rem auto; padding: 0 2rem; }
+        h2 { font-size: 2.3rem; text-align: center; margin-bottom: 3rem; color: var(--dark); }
+
+        .faq { max-width: 800px; margin: 0 auto; }
+        details { margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 1rem; }
+        summary { font-weight: 600; cursor: pointer; padding: 1rem 0; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Centro de Soporte</h1>
+        <p>Estamos aquí para ayudarte</p>
+    </header>
+
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq">
+            <details>
+                <summary>¿Cómo reiniciar el sistema de cámaras?</summary>
+                <p>Desconecta el equipo de la corriente por 30 segundos y vuelve a conectarlo.</p>
+            </details>
+            <details>
+                <summary>¿La cámara no se conecta al WiFi?</summary>
+                <p>Verifica la señal, reinicia el router y asegúrate de que la contraseña sea correcta.</p>
+            </details>
+            <details>
+                <summary>¿Cómo ver las grabaciones?</summary>
+                <p>Accede desde la app o el software de monitoreo con tus credenciales.</p>
+            </details>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contacto de Soporte</h2>
+        <p style="text-align:center; font-size:1.2rem;">
+            📞 (55) 8484 9724<br>
+            ✉️ smartcamsystems@gmail.com
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SmartCam Systems - Todos los derechos reservados</p>
+    </footer>
+
+    <a href="https://wa.me/525643423677" class="whatsapp-float" target="_blank">💬</a>
+</body>
+</html>
