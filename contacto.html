@@ -101,68 +101,35 @@
         <p>Resolvemos tus dudas rápidamente</p>
     </header>
 
- <section>
 
-<form id="contactForm">
+<section>
+    <form action="https://formspree.io/f/xvgrbqpj" method="POST">
 
-    <input type="text"
-           name="nombre"
-           placeholder="Tu nombre completo"
-           required>
+        <input type="text" 
+               name="nombre" 
+               placeholder="Tu nombre completo" 
+               required>
 
-    <input type="email"
-           name="email"
-           placeholder="Correo electrónico"
-           required>
+        <input type="email" 
+               name="email" 
+               placeholder="Correo electrónico" 
+               required>
 
-    <input type="tel"
-           name="telefono"
-           placeholder="Teléfono / WhatsApp">
+        <input type="tel" 
+               name="telefono" 
+               placeholder="Teléfono / WhatsApp">
 
-    <textarea name="mensaje"
-              rows="6"
-              placeholder="¿En qué podemos ayudarte?"
-              required></textarea>
+        <textarea name="mensaje" 
+                  rows="6" 
+                  placeholder="¿En qué podemos ayudarte?" 
+                  required></textarea>
 
-    <button type="submit">
-        Enviar Mensaje
-    </button>
+        <button type="submit">
+            Enviar Mensaje
+        </button>
 
-    <p id="respuesta"
-       style="margin-top:15px; text-align:center; font-weight:bold;">
-    </p>
-
-</form>
-
+    </form>
 </section>
-
-<script>
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
-
-    e.preventDefault();
-
-    const form = e.target;
-    const data = new FormData(form);
-
-    const response = await fetch("https://formspree.io/f/xvgrbqpj", {
-        method: "POST",
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-    });
-
-    const mensaje = document.getElementById("respuesta");
-
-    if (response.ok) {
-        mensaje.innerHTML = "✅ Mensaje enviado correctamente";
-        form.reset();
-    } else {
-        mensaje.innerHTML = "❌ Error al enviar el mensaje";
-    }
-
-});
-</script>
 
     <footer>
         <p>&copy; 2026 SmartCam Systems - Todos los derechos reservados</p>
